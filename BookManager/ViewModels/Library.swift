@@ -102,6 +102,7 @@ class Library: ObservableObject {
   // MARK: Adding books
   func addBookToLibrary(title: String, author: String, gender: String, displayed: Bool) {
     self.books.append(Book(title: title, author: author, gender: gender, displayed: displayed))
+    self.books = self.books.sorted()
   }
   
   // MARK: Parsing methods

@@ -33,6 +33,9 @@ struct NewBookView: View {
                      label: {
                        Text("Display book in library")
           })
+          Button("Add Book") {
+                library.addBookToLibrary(title: title, author: author, gender: gender, displayed: displayed)
+          }
         }
       }
     }
